@@ -28,16 +28,19 @@ export default function PostHeader(
       </div>
       <div className="mx-auto max-w-2xl">
         <div className="mb-4 block">
-          <p>{length}</p>
+          {length && <p>{length}</p>}
         </div>
         <div className="mb-4 block">
-          <p>{duration}</p>
+          {duration && <p>{duration}</p>}
         </div>
         <div className="mb-4 block">
-          <p>{startPlace}</p>
+          {startPlace && <p>{startPlace}</p>}
         </div>
         <div className="mb-4 block">
           <Badge children={category} />
+        </div>
+        <div className="mb-4 text-lg">
+          <Date dateString={date} />
         </div>
       </div>
     </>
