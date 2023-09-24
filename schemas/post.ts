@@ -87,6 +87,34 @@ export default defineType({
       initialValue: () => new Date().toISOString(),
     }),
     defineField({
+      name: 'length',
+      title: 'Length',
+      type: 'string'
+    }),
+    defineField({
+      name: 'duration',
+      title: 'Duration',
+      type: 'string'
+    }),
+    defineField({
+      name: 'startPlace',
+      title: 'Start Place',
+      type: 'string'
+    }),
+    defineField({
+      title: 'category',
+      name: 'Post category',
+      type: 'string',
+      options: {
+        list: [
+          { "title": "Hiking", "value": "hike"},
+          { "title": "Travel", "value": "travel"},
+          { "title": "Development", "value": "dev"},
+        ],
+        layout: 'dropdown'
+      }
+    }),
+    defineField({
       name: 'author',
       title: 'Author',
       type: 'reference',
