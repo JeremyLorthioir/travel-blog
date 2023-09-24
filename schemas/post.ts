@@ -103,7 +103,7 @@ export default defineType({
     }),
     defineField({
       title: 'category',
-      name: 'Post category',
+      name: 'Category',
       type: 'string',
       options: {
         list: [
