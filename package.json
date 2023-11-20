@@ -19,6 +19,7 @@
     "@sanity/client": "6.4.12",
     "@sanity/image-url": "1.0.2",
     "@sanity/vision": "3.16.7",
+    "@vercel/analytics": "^1.1.1",
     "@vercel/og": "0.5.14",
     "classnames": "2.3.2",
     "date-fns": "2.30.0",
@@ -35,6 +36,7 @@
     "swr": "2.2.2"
   },
   "devDependencies": {
+    "@types/node": "^20.9.2",
     "@types/react": "18.2.22",
     "@types/styled-components": "5.1.27",
     "autoprefixer": "10.4.15",

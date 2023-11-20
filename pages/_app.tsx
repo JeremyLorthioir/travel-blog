@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import { Analytics } from '@vercel/analytics/react';
 
 import { AppProps } from 'next/app'
 import { lazy } from 'react'
@@ -20,9 +21,13 @@ export default function App({
       {draftMode ? (
         <PreviewProvider token={token}>
           <Component {...pageProps} />
+          <Analytics />
         </PreviewProvider>
       ) : (
-        <Component {...pageProps} />
+        <>
+          <Component {...pageProps} />
+          <Analytics />
+        </>
       )}
     </>
   )
