@@ -1,14 +1,35 @@
 import Avatar from 'components/AuthorAvatar'
 import CoverImage from 'components/CoverImage'
-import Date from 'components/PostDate'
 import Badge from 'components/PostBadge'
+import Date from 'components/PostDate'
 import PostTitle from 'components/PostTitle'
 import type { Post } from 'lib/sanity.queries'
 
 export default function PostHeader(
-  props: Pick<Post, 'title' | 'coverImage' | 'date' | 'author' | 'slug'  | 'length' | 'duration' | 'startPlace' | 'category'>,
+  props: Pick<
+    Post,
+    | 'title'
+    | 'coverImage'
+    | 'date'
+    | 'author'
+    | 'slug'
+    | 'length'
+    | 'duration'
+    | 'startPlace'
+    | 'category'
+  >,
 ) {
-  const { title, coverImage, date, author, slug, length, duration, startPlace, category } = props
+  const {
+    title,
+    coverImage,
+    date,
+    author,
+    slug,
+    length,
+    duration,
+    startPlace,
+    category,
+  } = props
   return (
     <>
       <PostTitle>{title}</PostTitle>

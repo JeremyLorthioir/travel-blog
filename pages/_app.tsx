@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css'
-import { Analytics } from '@vercel/analytics/react';
 
+import { Analytics } from '@vercel/analytics/react'
 import { AppProps } from 'next/app'
 import { lazy } from 'react'
 
